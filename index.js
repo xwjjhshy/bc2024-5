@@ -18,3 +18,16 @@ app.get('/', (req, res) => {
 app.listen(options.port, options.host, () => {
     console.log(`Server is running at http://${options.host}:${options.port}`);
 });
+const fs = require('fs');
+const path = require('path');
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+
+const notesDir = options.cache;
+
+// Переконайтесь, що директорія існує
+if (!fs.existsSync(notesDir)) {
+    fs.mkdirSync(notesDir);
+}
