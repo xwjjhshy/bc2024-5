@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "e874c086-58ad-46e1-8bc4-43c5240c1c4d",
+		"name": "Notes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40045820"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:3000/notes/Makson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/notes/Misha",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"Misha"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
